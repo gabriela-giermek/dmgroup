@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// Styles for navbar toggler
+// -----------------------------------------------------------------------------
+
+.navbar-toggler {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1030;
+
+  &__bar {
+    width: 35px;
+    height: 3px;
+    display: block;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $color-black;
+      position: absolute;
+      transition: left .3s ease-in-out;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      left: -200%;
+    }
+
+    &:nth-child(2) {
+      margin: 5px 0;
+
+      &::before,
+      &::after {
+        transition: left .3s ease-in-out .2s;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before,
+      &::after {
+        transition: left .3s ease-in-out .4s;
+      }
+    }
+  }
+
+  &:hover {
+    .navbar-toggler__bar {
+      &::before {
+        left: 200%;
+      }
+  
+      &::after {
+        left: 0;
+      }
+    }
+  }
+}

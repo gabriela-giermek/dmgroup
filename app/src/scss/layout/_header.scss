@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// Style for header
+// -----------------------------------------------------------------------------
+
+.header {
+  background-color: $color-white;
+  position: relative;
+  z-index: 1000;
+
+  &__top {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba($color-black, 0.1);
+
+    @include media-breakpoint-up(lg) {
+      padding: 15px 0;
+    }
+  }
+
+  &__services {
+    @include media-breakpoint-up(xxl) {
+      margin-right: 90px;
+    }
+
+    &-item {
+      margin-right: 20px;
+      font-size: 13px;
+      font-weight: 800;
+      color: $color-primary;
+      line-height: 1;
+      letter-spacing: 1px;
+
+      @include media-breakpoint-up(lg) {
+        margin-right: 40px;
+        font-size: 15px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        margin-right: 60px;
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        font-size: 18px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(106, 106, 106);
+    line-height: 1;
+    letter-spacing: 1px;
+
+    @include media-breakpoint-up(lg) {
+      margin-right: 40px;
+      font-size: 14px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      margin-right: 60px;
+      font-size: 15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $color-primary;
+
+      .header {
+        &__link {
+          &-icon {
+            fill: $color-primary;
+          }
+        }
+      }
+    }
+
+    &-icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      fill: rgb(106, 106, 106);
+      transition: fill 0.3s ease-in-out;
+
+      @include media-breakpoint-up(xxl) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  &__nav {
+    padding: 12px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 20px 0;
+    }
+  }
+
+  &__logo {
+    margin-right: 20px;
+
+    &-img {
+      width: 160px;
+
+      @include media-breakpoint-up(xxl) {
+        width: 200px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        width: 300px;
+      }
+    }
+  }
+}

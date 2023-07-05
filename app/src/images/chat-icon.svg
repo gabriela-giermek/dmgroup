@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,2.74974e-26,-2)">
+        <g id="_22-chat">
+            <path d="M32,3C32,2.448 31.552,2 31,2L1,2C0.448,2 -0,2.448 0,3L0,23C0,23.552 0.448,24 1,24L7.586,24C7.586,24 13.293,29.707 13.293,29.707C13.579,29.993 14.009,30.079 14.383,29.924C14.756,29.769 15,29.404 15,29L15,24C15,24 31,24 31,24C31.552,24 32,23.552 32,23L32,3ZM30,4L30,22C30,22 14,22 14,22C13.448,22 13,22.448 13,23L13,26.586C13,26.586 8.707,22.293 8.707,22.293C8.52,22.105 8.265,22 8,22L2,22C2,22 2,4 2,4L30,4Z" style="fill:white;"/>
+            <path d="M7,10L25,10C25.552,10 26,9.552 26,9C26,8.448 25.552,8 25,8L7,8C6.448,8 6,8.448 6,9C6,9.552 6.448,10 7,10Z" style="fill:white;"/>
+            <path d="M7,14L25,14C25.552,14 26,13.552 26,13C26,12.448 25.552,12 25,12L7,12C6.448,12 6,12.448 6,13C6,13.552 6.448,14 7,14Z" style="fill:white;"/>
+            <path d="M7,18L25,18C25.552,18 26,17.552 26,17C26,16.448 25.552,16 25,16L7,16C6.448,16 6,16.448 6,17C6,17.552 6.448,18 7,18Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

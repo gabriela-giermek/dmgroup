@@ -1,0 +1,125 @@
+// -----------------------------------------------------------------------------
+// Style for list img
+// -----------------------------------------------------------------------------
+
+.list-img {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 20px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-top: 70px;
+    margin-bottom: 150px;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    @include media-breakpoint-up(fhd) {
+      margin-bottom: 80px;
+      padding-right: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-icon {
+      width: 30px;
+      margin-right: 35px;
+
+      @include media-breakpoint-up(xxl) {
+        width: 38px;
+      }
+    }
+
+    &-text {
+      * {
+        font-size: 18px;
+        line-height: 1.5;
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 20px;
+        }
+
+        @include media-breakpoint-up(fhd) {
+          font-size: 24px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__img {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 50px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    &::before {
+      content: "";
+      width: 5000px;
+      height: 280px;
+      left: 40%;
+      bottom: 0;
+      background-color: $color-primary;
+      position: absolute;
+
+      @include media-breakpoint-up(md) {
+        height: 320px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        height: 340px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        height: 430px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        height: 560px;
+      }
+    }
+
+    &-inner {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      box-shadow: 0 0 50px rgba($color-black, 0.2);
+      position: relative;
+      z-index: 1;
+
+      @include media-breakpoint-up(md) {
+        height: 450px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        height: 480px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        height: 560px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        height: 800px;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// Style for page title
+// -----------------------------------------------------------------------------
+
+.page-title {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+
+  @include media-breakpoint-up(xxl) {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    color: $color-white;
+  }
+
+  .breadcrumbs {
+    * {
+      font-size: 14px;
+      font-weight: 300;
+      color: $gray-300;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+      }
+    }
+
+    &__item,
+    &__separator {
+      margin-bottom: 7px;
+      display: inline-block;
+    }
+
+    &__link {
+      * {
+        transition: color 0.3s ease-in-out;
+      }
+
+      &:hover {
+        * {
+          color: $color-primary;
+        }
+      }
+    }
+
+    &__separator {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+}

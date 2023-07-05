@@ -1,0 +1,162 @@
+// -----------------------------------------------------------------------------
+// Style for offer page
+// -----------------------------------------------------------------------------
+
+.offer-page {
+  margin-top: 100px;
+  margin-bottom: 120px;
+
+  @include media-breakpoint-up(xxl) {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  &__menu {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__info {
+    padding: 28px 30px;
+    background-color: $color-gray;
+    position: relative;
+
+    @include media-breakpoint-up(fhd) {
+      padding: 34px 30px;
+    }
+
+    &::before {
+      content: "";
+      width: 3px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $color-primary;
+      position: absolute;
+    }
+
+    &-text {
+      font-size: 18px;
+      font-weight: 600;
+      color: $color-black;
+      line-height: 20px;
+    }
+  }
+
+  .pagination {
+    margin-top: 80px;
+
+    @include media-breakpoint-up(xxl) {
+      margin-top: 100px;
+    }
+
+    .page-numbers {
+      &:not(.prev):not(.next) {
+        width: 30px;
+        height: 30px;
+        margin: 5px 3px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $gray-900;
+        line-height: 30px;
+        text-align: center;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      &.current {
+        color: $color-white;
+        background-color: $color-primary;
+      }
+
+      &.prev,
+      &.next {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          width: 20px;
+          height: 12px;
+          position: absolute;
+        }
+
+        &::before {
+          width: 18px;
+          height: 2px;
+          top: 14px;
+          background-color: $gray-900;
+          transition: background-color 0.3s ease-in-out;
+        }
+
+        &::after {
+          width: 8px;
+          height: 8px;
+          top: 11px;
+          border: 2px solid $gray-900;
+          border-bottom: none;
+          transition: border-color 0.3s ease-in-out;
+        }
+
+        &:hover {
+          &::before {
+            background-color: $color-primary;
+          }
+
+          &::after {
+            border-color: $color-primary;
+          }
+        }
+      }
+
+      &.prev {
+        margin-right: 10px;
+
+        @include media-breakpoint-up(xxl) {
+          margin-right: 20px;
+        }
+
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          border-right: none;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &.next {
+        margin-left: 10px;
+
+        @include media-breakpoint-up(xxl) {
+          margin-left: 20px;
+        }
+
+        &::before {
+          right: 0;
+        }
+
+        &::after {
+          right: 0;
+          border-left: none;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

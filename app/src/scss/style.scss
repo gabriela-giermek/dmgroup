@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+// 1. Configuration
+@import
+'utils/mixins',
+'utils/variables';
+
+// 2. Vendors
+@import '~bootstrap/scss/bootstrap-grid';
+@import
+  'vendors/scrollbar',
+  'vendors/animations',
+  'vendors/slick',
+  'vendors/fancybox';
+
+// 3. Base
+@import
+'base/fonts',
+'base/base',
+'base/helpers',
+'base/typography';
+
+// 4. Components
+@import
+'components/menu-mobile',
+'components/lang',
+'components/buttons',
+'components/header-menu',
+'components/navbar-toggler',
+'components/page-title',
+'components/offer-box',
+'components/offer-menu',
+'components/tabs';
+
+// 5. Layout
+@import
+'layout/grid',
+'layout/form',
+'layout/header',
+'layout/hero-slider',
+'layout/offer',
+'layout/img-text',
+'layout/icon-list',
+'layout/img-text-top',
+'layout/banner',
+'layout/slider-logo',
+'layout/offer-page',
+'layout/text',
+'layout/list-img',
+'layout/counter',
+'layout/gallery',
+'layout/team',
+'layout/contact-details',
+'layout/contact-form',
+'layout/inquiry-form',
+'layout/footer';
+
+
+// 6. Pages
+@import
+'pages/single-offer',
+'pages/page-404';

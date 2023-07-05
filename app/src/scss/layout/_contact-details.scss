@@ -1,0 +1,201 @@
+// -----------------------------------------------------------------------------
+// Style for contact details
+// -----------------------------------------------------------------------------
+
+.contact-details {
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 70px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  @include media-breakpoint-up(fhd) {
+    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 40px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 60px;
+    }
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: $color-primary;
+      position: absolute;
+
+      @include media-breakpoint-up(xl) {
+        width: 120px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        width: 230px;
+      }
+    }
+
+    * {
+      @extend h2;
+      text-transform: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-label {
+      width: 120px;
+      padding-top: 3px;
+      padding-right: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      color: $gray-900;
+      line-height: 1.2;
+
+      @include media-breakpoint-up(sm) {
+        width: 140px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        padding-top: 5px;
+        font-size: 18px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        padding-top: 5px;
+        font-size: 20px;
+      }
+    }
+
+    &-text {
+      padding-left: 10px;
+
+      * {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: $color-text;
+        line-height: 1.8;
+
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 20px;
+        }
+      }
+
+      a {
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &__location {
+    margin-top: 70px;
+    position: relative;
+    box-shadow: 0 0 50px rgba($color-black, 0.15);
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+
+    &::before {
+      content: "";
+      width: 5000px;
+      height: 50%;
+      left: 57%;
+      bottom: -50px;
+      background-color: $color-primary;
+      position: absolute;
+
+      @include media-breakpoint-up(md) {
+        bottom: -70px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+      }
+
+      @include media-breakpoint-up(fhd) {
+        height: 57%;
+        bottom: -150px;
+      }
+    }
+
+    &-link {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
+
+    &-icon {
+      width: 40px;
+
+      @include media-breakpoint-up(xxl) {
+        width: 58px;
+      }
+    }
+
+    &-text {
+      margin-top: 15px;
+      display: inline-block;
+
+      * {
+        margin-bottom: 0;
+        font-family: $font-secondary;
+        font-size: 15px;
+        font-weight: 800;
+        color: $color-primary;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-map {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

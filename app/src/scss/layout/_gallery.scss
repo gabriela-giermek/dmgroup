@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// Style for gallery
+// -----------------------------------------------------------------------------
+
+.gallery {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  @include media-breakpoint-up(xxl) {
+    margin-top: 150px;
+    margin-bottom: 180px;
+  }
+
+  &__item {
+    background-color: $color-black;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      top: 50%;
+      position: absolute;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      width: 2px;
+      height: 60%;
+      right: -1px;
+      background-color: $color-white;
+    }
+
+    &::after {
+      width: 4px;
+      height: 30%;
+      right: -2px;
+      background-color: $color-primary;
+    }
+
+    &-link {
+      cursor: pointer;
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

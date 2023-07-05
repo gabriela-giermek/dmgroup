@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// Style for icon list
+// -----------------------------------------------------------------------------
+
+.icon-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  &__item {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 30px;
+    }
+
+    &-icon {
+      height: 50px;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up(xxl) {
+        height: 65px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &-text {
+      max-width: 330px;
+      margin: 0 auto;
+
+      * {
+        margin-bottom: 0;
+        line-height: 1.6;
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

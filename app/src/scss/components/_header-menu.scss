@@ -1,0 +1,133 @@
+// -----------------------------------------------------------------------------
+// Style for header menu
+// -----------------------------------------------------------------------------
+
+.header-menu {
+  ul {
+    li {
+      padding: 0;
+      
+      &::before {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        a {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .sub-menu {
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    list-style: none;
+    background-color: $color-white;
+    cursor: auto;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+
+    .menu-item {
+      margin: 0 0 10px 0;
+
+      &.current-menu-item {
+        a {
+          color: $color-primary;
+        }
+      }
+
+      a {
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-black;
+        line-height: 1;
+        background-color: $color-white;
+        cursor: pointer;
+        display: block;
+        white-space: nowrap;
+        transition: color 0.3s ease-in-out;
+
+        @include media-breakpoint-up(xxl) {
+          font-size: 16px;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .menu-item {
+    margin: 0 15px;
+
+    @include media-breakpoint-up(xxl) {
+      margin: 0 30px;
+    }
+
+    &.menu-item-has-children {
+      padding-right: 15px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: 5px;
+        right: 0;
+        border: 2px solid $color-black;
+        border-top: none;
+        border-left: none;
+        position: absolute;
+        transform: rotate(45deg);
+      }
+    }
+
+    &.current-menu-item,
+    &.current-menu-parent {
+      a {
+        &::after {
+          content: "";
+          height: 2px;
+          right: 5px;
+          bottom: 0;
+          left: 5px;
+          background-color: $color-primary;
+          position: absolute;
+        }
+      }
+    }
+
+    a {
+      padding: 5px;
+      font-family: $font-secondary;
+      font-size: 15px;
+      font-weight: 800;
+      color: $color-black;
+      line-height: 1;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+
+      @include media-breakpoint-up(xxl) {
+        font-size: 16px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        font-size: 18px;
+      }
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

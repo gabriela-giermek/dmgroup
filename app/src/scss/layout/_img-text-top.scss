@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// Style for image and text
+// -----------------------------------------------------------------------------
+
+.img-text-top {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+  &__content {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: $color-gray;
+
+    @include media-breakpoint-up(xxl) {
+      padding-bottom: 80px;
+    }
+  }
+
+  &__title,
+  &__text {
+    * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 50px;
+    }
+
+    * {
+      @extend h2;
+    }
+  }
+
+  &__text {
+    * {
+      line-height: 2;
+
+      @include media-breakpoint-up(xxl) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__link {
+    margin-top: 30px;
+
+    @include media-breakpoint-up(xxl) {
+      margin-top: 50px;
+    }
+  }
+}

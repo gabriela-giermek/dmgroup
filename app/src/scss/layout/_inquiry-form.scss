@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// Style for inquiry form
+// -----------------------------------------------------------------------------
+
+.inquiry-form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 0;
+  }
+
+  &__title {
+    * {
+      @extend h2;
+      text-transform: none;
+
+      @include media-breakpoint-up(md) {
+        font-size: 35px;
+      }
+
+      @include media-breakpoint-up(fhd) {
+        font-size: 40px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+
+    * {
+      @include media-breakpoint-up(xxl) {
+        font-size: 18px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 50px;
+
+    @include media-breakpoint-up(fhd) {
+      margin-top: 70px;
+    }
+  }
+
+  .form {
+    &__group {
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up(xxl) {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &>p {
+        margin-bottom: 0;
+      }
+
+      &--textarea {
+        &>p,
+        .wpcf7-form-control-wrap,
+        .form__control--textarea {
+          height: 100%;
+        }
+      }
+    }
+
+    &__btn {
+      @include media-breakpoint-up(xl) {
+        margin-top: 50px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        margin-top: 60px;
+      }
+    }
+  }
+}

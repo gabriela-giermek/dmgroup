@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// Style for contact form
+// -----------------------------------------------------------------------------
+
+.contact-form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $color-gray;
+
+  @include media-breakpoint-up(xxl) {
+    padding-top: 150px;
+    padding-bottom: 180px;
+  }
+
+  &__title {
+    * {
+      @extend h2;
+      text-transform: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 25px;
+
+    * {
+      @include media-breakpoint-up(xxl) {
+        font-size: 18px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 50px;
+
+    @include media-breakpoint-up(xxl) {
+      margin-top: 100px;
+    }
+  }
+}

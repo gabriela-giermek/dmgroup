@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// Style for language toggler
+// -----------------------------------------------------------------------------
+
+.lang {
+  position: relative;
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 15px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-left: 30px;
+  }
+
+  .pll-switcher-select {
+    border: none;
+  }
+
+  &__btn {
+    padding: 5px 20px 5px 5px;
+    font-family: $font-secondary;
+    font-size: 18px;
+    font-weight: 800;
+    color: $color-black;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      font-size: 16px;
+    }
+
+    @include media-breakpoint-up(fhd) {
+      font-size: 18px;
+    }
+
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      top: 5px;
+      right: 0;
+      border: 2px solid $color-black;
+      border-top: none;
+      border-left: none;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__list {
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    background-color: $color-white;
+    cursor: auto;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba($color-black, 0.1);
+
+    .lang {
+      &-item {
+        margin: 0;
+        padding-left: 0;
+
+        &::before {
+          display: none;
+        }
+
+        a {
+          margin-top: 10px;
+          padding: 5px 10px;
+          font-size: 16px;
+          font-weight: 400;
+          color: $color-black;
+          line-height: 1;
+          text-transform: uppercase;
+          background-color: $color-white;
+          cursor: pointer;
+          display: block;
+          white-space: nowrap;
+          transition: color 0.3s ease-in-out;
+
+          @include media-breakpoint-only(xl) {
+            font-size: 14px;
+          }
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

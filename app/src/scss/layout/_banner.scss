@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// Style for banner
+// -----------------------------------------------------------------------------
+
+.banner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  @include media-breakpoint-up(fhd) {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  &__box {
+    height: 100%;
+    min-height: 250px;
+    padding: 50px 30px 30px 30px;
+    box-shadow: 0 0 30px rgba($color-black, 0.1);
+  
+    @include media-breakpoint-up(fhd) {
+      padding: 70px 55px 55px 55px;
+    }
+
+    &-icon {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-up(xl) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &-text {
+      max-width: 300px;
+
+      * {
+        line-height: 1.6;
+  
+        @include media-breakpoint-up(xxl) {
+          font-size: 18px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-btn {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  }
+
+  &__img,
+  &__bg {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__img {
+    height: 250px;
+  
+    @include media-breakpoint-up(sm) {
+      height: 100%;
+    }
+  }
+}

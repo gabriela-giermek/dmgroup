@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g>
+            <circle cx="160" cy="437" r="15" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <circle cx="220" cy="437" r="15" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <circle cx="100" cy="437" r="15" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <rect x="116" y="60" width="88" height="30" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <path d="M160,155C135.187,155 115,175.187 115,200L145,200C145,191.729 151.729,185 160,185C168.271,185 175,191.729 175,200C175,208.271 168.271,215 160,215L145,215L145,265L175,265L175,242.43C192.461,236.239 205,219.556 205,200C205,175.187 184.813,155 160,155Z" style="fill:rgb(126,130,136);fill-rule:nonzero;"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <rect x="145" y="295" width="30" height="30" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <path d="M320,115L320,45C320,20.187 299.813,0 275,0L45,0C20.187,0 0,20.187 0,45L0,467C0,491.813 20.187,512 45,512L275,512C299.813,512 320,491.813 320,467L320,325L379,325L379,391.579L469.905,325L512,325L512,115L320,115ZM290,467C290,475.271 283.271,482 275,482L45,482C36.729,482 30,475.271 30,467L30,45C30,36.729 36.729,30 45,30L275,30C283.271,30 290,36.729 290,45L290,115L245,115L245,325L290,325L290,467ZM482,295L460.095,295L409,332.421L409,295L275,295L275,145L482,145L482,295Z" style="fill:rgb(126,130,136);fill-rule:nonzero;"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <rect x="305" y="235" width="117" height="30" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+    <g>
+        <g>
+            <rect x="305" y="175" width="147" height="30" style="fill:rgb(126,130,136);"/>
+        </g>
+    </g>
+</svg>
